@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无聊至极</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/smiley-sans@2.0.1/css/smiley-sans.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="side-nav">
+            <div class="logo">无聊至极</div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#content">无聊内容</a></li>
+                <li><a href="#games">小游戏</a></li>
+                <li><a href="#links">奇怪的链接</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="hero">
+                <h1>无聊至极，乐在其中</h1>
+                <p>今日无聊挑战：尝试盯着墙看5分钟，看看能发现什么有趣的图案</p>
+                <div class="daily-facts">
+                    <h3>今日无聊事实</h3>
+                    <div class="fact-card">你知道吗？人类平均每天眨眼20,000次</div>
+                </div>
+            </section>
+
+            <section id="content" class="boring-content">
+                <h2>无聊事实</h2>
+                <div class="content-tabs">
+                    <button class="tab-btn active" data-tab="facts">无聊事</button>
+                    <button class="tab-btn" data-tab="stories">无聊故事</button>
+                    <button class="tab-btn" data-tab="pictures">无聊图片</button>
+                    <button class="tab-btn" data-tab="videos">无聊视频</button>
+                </div>
+                <div class="content-container">
+                    <div class="tab-content active" id="facts">
+                        <div class="fact-list">
+                            <h3>无聊统计</h3>
+                            <ul>
+                                <li>全球每天约有100万人在数羊入睡</li>
+                                <li>平均每个人一生要等红灯6个月</li>
+                                <li>人类平均一天会发呆23分钟</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="stories">
+                        <div class="story-card">
+                            <h3>等红灯的故事</h3>
+                            <p>有一天，我在等红灯时数了数经过的自行车，一共127辆...</p>
+                        </div>
+                        <div class="story-card">
+                            <h3>数云朵的下午</h3>
+                            <p>躺在草地上数云朵，发现一朵云变成了狗，然后变成了猫...</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pictures">
+                        <div class="picture-card">
+                            <img src="https://picsum.photos/300/200" alt="随机无聊图片">
+                            <p>这是一张非常无聊的图片</p>
+                        </div>
+                        <div class="picture-card">
+                            <img src="https://picsum.photos/300/201" alt="随机无聊图片">
+                            <p>这也是一张非常无聊的图片</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="videos">
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                    frameborder="0" allowfullscreen></iframe>
+                            <h3>经典无聊视频</h3>
+                        </div>
+                        <div class="video-card">
+                            <iframe src="https://www.youtube.com/embed/z_HWtzUHm6s"
+                                    frameborder="0" allowfullscreen></iframe>
+                            <h3>10小时的无聊音乐</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="games" class="games">
+                <h2>今日游戏</h2>
+                <div class="game-container">
+                    <div class="game-box" id="clickGame">
+                        <h3>功德点击</h3>
+                        <p>点击次数: <span id="clickCount">0</span></p>
+                        <div id="woodenFish">🪘</div>
+                        <button id="clickButton">点我</button>
+                    </div>
+                    <div class="game-box" id="matchGame">
+                        <h3>无聊消消乐</h3>
+                        <div class="match-game-info">
+                            <span>关卡: <span id="level">1</span></span>
+                            <span>得分: <span id="score">0</span></span>
+                            <span>剩余步数: <span id="moves">10</span></span>
+                        </div>
+                        <div class="match-game-grid"></div>
+                        <div class="match-game-controls">
+                            <button id="restartGame">重新开始</button>
+                            <button id="useBooster" disabled>爆炸道具</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="links" class="weird-links">
+                <h2>奇怪的发现</h2>
+                <div class="links-container">
+                    <a href="https://longdogechallenge.com/" class="weird-link" target="_blank">
+                        <span>🐕 长狗挑战 - 它到底有多长？</span>
+                    </a>
+                    <a href="https://weirdorconfusing.com/" class="weird-link" target="_blank">
+                        <span>❓ 奇怪还是困惑 - 自己判断吧</span>
+                    </a>
+                    <a href="https://theuselessweb.com/" class="weird-link" target="_blank">
+                        <span>🌐 无用网站大全</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>联系我们</h2>
+                <div class="contact-container">
+                    <div class="message-board">
+                        <h3>无聊留言板</h3>
+                        <form id="messageForm">
+                            <input type="text" placeholder="你的昵称" required>
+                            <textarea placeholder="分享你的无聊经历..." required></textarea>
+                            <button type="submit">发送</button>
+                        </form>
+                        <div id="messages"></div>
+                    </div>
+                    <div class="social-share">
+                        <h3>分享无聊</h3>
+                        <div class="share-buttons">
+                            <button class="share-btn weixin">微信</button>
+                            <button class="share-btn weibo">微博</button>
+                            <button class="share-btn qq">QQ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="match-game.js"></script>
+</body>
+</html> 
